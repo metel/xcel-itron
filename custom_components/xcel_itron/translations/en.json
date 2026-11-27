@@ -1,0 +1,65 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to your Xcel meter",
+        "description": "Enter the local IP address and port of your Itron meter. If the meter was discovered automatically, these fields are already filled in.",
+        "data": {
+          "host": "Meter IP address",
+          "port": "Meter port",
+          "name": "Device name",
+          "credential_mode": "Credentials"
+        }
+      },
+      "lfdi": {
+        "title": "Register this LFDI",
+        "description": "Register the following LFDI for this meter on the [Xcel Launchpad]({launchpad_url}) before continuing.\n\n**LFDI:** `{lfdi}`\n\nThe meter will reject the connection until the LFDI is registered. The integration retries automatically, so you can also submit now and register afterwards.",
+        "data": {}
+      },
+      "existing": {
+        "title": "Existing credentials",
+        "description": "Enter the certificate and private key paths. Relative paths are resolved against the Home Assistant configuration directory. The certificate must already be registered with Xcel.",
+        "data": {
+          "cert_path": "Certificate path",
+          "key_path": "Private key path"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Xcel meter",
+        "description": "Update the meter address. The existing certificate and key are reused.",
+        "data": {
+          "host": "Meter IP address",
+          "port": "Meter port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the meter. Check the IP address, port and network.",
+      "invalid_auth": "The meter rejected the client certificate. Verify that the LFDI is registered with Xcel.",
+      "invalid_certificate": "The certificate or private key could not be read.",
+      "unknown": "Unexpected error while contacting the meter."
+    },
+    "abort": {
+      "already_configured": "This meter is already configured.",
+      "cannot_connect": "The discovered meter did not provide a usable address.",
+      "certificate_generation_failed": "The client certificate could not be generated.",
+      "reconfigure_successful": "Reconfiguration successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Xcel Itron options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)"
+        }
+      }
+    }
+  },
+  "issues": {
+    "credentials_rejected": {
+      "title": "Xcel meter rejected the client certificate",
+      "description": "The meter at {host} rejected the client certificate. Verify that LFDI `{lfdi}` is registered for this meter on the [Xcel Launchpad]({launchpad_url}). The integration will keep retrying."
+    }
+  }
+}

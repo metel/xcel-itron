@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceCapability xmlns="urn:ieee:std:2030.5:ns">
+  <lFDI>METERLFDI0123456789ABCDEF</lFDI>
+  <swVer>3.2.50</swVer>
+  <mfID>Itron</mfID>
+</DeviceCapability>

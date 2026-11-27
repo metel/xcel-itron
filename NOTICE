@@ -1,0 +1,12 @@
+Xcel Itron Smart Meter for Home Assistant
+
+This product is an AI-assisted rework of the "xcel-itron" project by Zak Nye
+(https://github.com/zaknye/xcel_itron2mqtt), which is licensed under the Apache
+License, Version 2.0.
+
+Original work: Copyright Zak Nye
+Modifications and rework: Copyright 2026 Alex Metelkin
+
+The original project provided the concept, the IEEE 2030.5 protocol research
+and the initial implementation. Please support the original work at the URL
+above.

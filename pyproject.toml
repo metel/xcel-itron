@@ -1,0 +1,26 @@
+[project]
+name = "xcel-itron"
+version = "1.0.0"
+description = "Home Assistant integration for Xcel Itron smart meters (AI-assisted rework of zaknye/xcel_itron2mqtt)"
+authors = [{ name = "Alex Metelkin", email = "alex@metelkin.com" }]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/metel/xcel-itron"
+Issues = "https://github.com/metel/xcel-itron/issues"
+Upstream = "https://github.com/zaknye/xcel_itron2mqtt"
+
+[dependency-groups]
+test = [
+    "pytest-homeassistant-custom-component",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

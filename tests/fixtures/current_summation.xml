@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reading xmlns="urn:ieee:std:2030.5:ns">
+  <timePeriod>
+    <start>2024-01-01T00:00:00Z</start>
+  </timePeriod>
+  <value>123456</value>
+</Reading>
