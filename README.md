@@ -13,8 +13,7 @@ creates regular Home Assistant sensors - no MQTT broker required.
 
 ![Home Assistant screenshot](docs/homeassistant_screenshot.png)
 
-The upstream project was formerly the `xcel_itron2mqtt` Docker/MQTT bridge and is
-now published as `xcel-itron`. If you are still running the container, see
+The upstream project is the `xcel_itron2mqtt` Docker/MQTT bridge. If you are still running the container, see
 [Migrating from the MQTT bridge](#migrating-from-the-mqtt-bridge).
 
 ## Features

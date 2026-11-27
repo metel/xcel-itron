@@ -1,6 +1,7 @@
 {
   "domain": "xcel_itron",
   "name": "Xcel Itron Smart Meter",
+  "categories": ["energy.meters_monitoring"],
   "codeowners": ["@metel"],
   "config_flow": true,
   "documentation": "https://github.com/metel/xcel-itron",
